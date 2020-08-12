@@ -37,6 +37,13 @@ h3 {
 	margin: 0;
 }
 
+.nameSticky {
+	position: fixed;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
 .statement {
 	margin: -10px 20px 0 -20px;
 	font-size :1.5vw;
@@ -63,6 +70,10 @@ body div {
 	cursor: pointer;
 	padding: 40px;
 	max-width: 25%;
+}
+
+#list {
+	margin: 200px;
 }
 
 #list > div {
