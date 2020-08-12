@@ -73,7 +73,8 @@ body div {
 }
 
 #list {
-	margin: 200px;
+	margin-top: 200px;
+	margin-left: 20%;
 }
 
 #list > div {
