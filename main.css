@@ -245,7 +245,7 @@ div#col1.scroll {
 #col2 {
 	background-color: #e3b2b5;
 	position: absolute;
-	min-width: 700px;
+	min-width: 600px;
 	min-height: 150%;
 	left: 40%;
 	max-width: 70%;
