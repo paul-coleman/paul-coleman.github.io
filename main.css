@@ -310,6 +310,14 @@ div#col1.scroll {
 
 }
 
+#headMobile h3 {
+	font-size: 5vw;
+}
+
+#headmobile.statement {
+	font-size: 5vw;
+}
+
 .nameSticky {
 	display: none;
 
