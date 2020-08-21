@@ -305,6 +305,8 @@ div#col1.scroll {
 	z-index: 1;
 	width: 100vw;
 	position: fixed;
+	border: 0;
+	margin: 0;
 
 }
 
