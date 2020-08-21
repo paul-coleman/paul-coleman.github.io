@@ -17,26 +17,82 @@
 					<a href="contact.html">CV</a>
 				</ul>
 			</nav>
-
-			<h1><a href="contact.html">Paul Coleman</a></h1>
+			<div class="nameSticky">
+			<h1><a href="index.html">Paul Coleman</a></h1>
 			
-			<div class="statement">Student conservator based in Melbourne, Australia. Interested in the intersection between traditional craft and critical theory. Experienced in installation and deinstallation of contemporary artworks, and working with community cultural groups. Studying object and time-based-media conservation. Currently writing a thesis on documentation methodologies and pre-acquisition strategies for interactive, digital-based artworks.</div>
+			<div class="statement">Student conservator based in Melbourne, Australia. Interested in the intersection between traditional craft and critical theory. Experienced in installation and deinstallation of contemporary artworks, and working with community cultural groups. Studying object and time-based-media conservation.</div>
+			</div>
+
+			<div id="headMobile">
+			<h1><a href="index.html">Paul Coleman</a></h1>
+			
+			<div class="statement">Student conservator based in Melbourne, Australia. Interested in the intersection between traditional craft and critical theory. Experienced in installation and deinstallation of contemporary artworks, and working with community cultural groups. Studying object and time-based-media conservation.</div>
+			</div>
 		</header>
 
-		<div id="flex">
 
-			<div class="articles" onclick="location.href='puttingthecultureinculturalmaterials.html'">Putting the 'Culture' in Cultural Materials</div>
-			
-			<div class="articles" onclick="location.href='preventiveessay.html'">The Limitations of the 10 Agents of Deterioration: The Need for a Community Focused Approach to Conservation</div>
 
-			<div class="articles" onclick="location.href='creatingspace.html'">Creating Space: Mandawuy Yunupingu’s Both Ways Teaching as Embodied by Yothu Yindi</div>
+		<content id="frontPage">
+			<div class="scroll" data-rate="0.5" id="art1" onclick="location.href='puttingthecultureinculturalmaterials.html'"> 
+				<div>Putting the 'Culture' in Cultural Materials</div>	
+			</div>	
 
-			<div class="articles" onclick="location.href='haring.html'">Keith Haring Mural Analysis</div>
+			<div class="scroll" data-rate="0.4" id="art2" onclick="location.href='preventiveessay.html'"> 
+				<div>The Limitations of the 10 Agents of Deterioration: The Need for a Community Focused Approach to Conservation</div>
+			</div>
 
-			<div class="contact" onclick="location.href='contact.html'">CV</div>
+			<div class="scroll" data-rate="0.2" id="art3" onclick="location.href='creatingspace.html'">
+				<div>Creating Space: Mandawuy Yunupingu’s Both Ways Teaching as Embodied by Yothu Yindi</div>
+			</div>
+
+			<div class="scroll" data-rate="0.02" id="art4" onclick="location.href='haring.html'">
+				<div>Keith Haring Mural Analysis</div>
+			</div>
+		</content>
+		<content id="colorBlocks">
+			<div class="scroll" data-rate="2" id="col1"></div>
+			<div class="scroll" data-rate=".5" id="col2"></div>
+			<div class="scroll" data-rate="-.9" id="col3"></div>
+			<div class="scroll" data-rate="2" id="col4"></div>
+			<div class="scroll" data-rate="1.5" id="col5"></div>
+			<div class="scroll" data-rate="1.8" id="col6"></div>
+		</content>
+
+		<div id="frontPageMobile">
+			<div onclick="location.href='puttingthecultureinculturalmaterials.html'"> 
+			Putting the 'Culture' in Cultural Materials</div>	
+
+
+			<div onclick="location.href='preventiveessay.html'"> 
+			The Limitations of the 10 Agents of Deterioration: The Need for a Community Focused Approach to Conservation</div>
+
+
+			<div onclick="location.href='creatingspace.html'">
+			Creating Space: Mandawuy Yunupingu’s Both Ways Teaching as Embodied by Yothu Yindi</div>
+
+
+			<div onclick="location.href='haring.html'">
+			Keith Haring Mural Analysis</div>
 
 		</div>
 
-	</body>
+	<script>
 
-</html>
+		window.addEventListener('scroll', function(e) {
+
+			const target = document.querySelectorAll('.scroll');
+
+
+			var index = 0, length = target.length;
+			for(index; index < length; index++) {
+				var pos = window.pageYOffset * target[index].dataset.rate;
+
+				target[index].style.transform = 'translate3d(0px, '+pos+'px, 0px)';
+			}
+
+		});
+
+	</script>
+
+
+	</body>
