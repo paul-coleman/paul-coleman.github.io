@@ -194,6 +194,9 @@ div#art4.scroll{
 	cursor: pointer;
 }
 
+div#art5.scroll{
+	cursor: pointer;
+}
 
 /* Sets the position of the individual content whiteBoxes */
 #art1 {
@@ -222,6 +225,11 @@ div#art4.scroll{
 	z-index: 4;
 }
 
+#art5 {
+	left: 25%;
+	top: 400%;
+	z-index: 5;
+}
 
 /* These are the parallax colour blocks in the background */
 #col1 {

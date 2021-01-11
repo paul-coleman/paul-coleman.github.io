@@ -20,19 +20,25 @@
 			<div class="nameSticky">
 			<h1><a href="index.html">Paul Coleman</a></h1>
 			
-			<div class="statement">Student conservator based in Melbourne, Australia. Interested in the intersection between traditional craft and critical theory. Experienced in installation and deinstallation of contemporary artworks, and working with community cultural groups. Studying object and time-based-media conservation.</div>
+			<div class="statement">Conservation and Registration Technician at QVMAG, Launceston, Australia. Interested in the intersection between traditional craft and critical theory. Experienced in installation and deinstallation of contemporary artworks, and working with community cultural groups. Interested in software programming to inform preventive conservation approaches.</div>
 			</div>
 
 			<div id="headMobile">
 			<h1><a href="index.html">Paul Coleman</a></h1>
 			
-			<div class="statement">Student conservator based in Melbourne, Australia. Interested in the intersection between traditional craft and critical theory. Experienced in installation and deinstallation of contemporary artworks, and working with community cultural groups. Studying object and time-based-media conservation.</div>
+			<div class="statement">Conservation and Registration Technician at QVMAG, Launceston, Australia. Interested in the intersection between traditional craft and critical theory. Experienced in installation and deinstallation of contemporary artworks, and working with community cultural groups. Interested in software programming to inform preventive conservation approaches.</div>
 			</div>
 		</header>
 
 
 
 		<content id="frontPage">
+			<!-- To create a new article create a div with class scroll
+			data-rate controls paralax (lower number = faster scroll)
+			create a subsequent id# and add the info on the css 
+
+			don't forget to add the mobile friendly version below-->
+
 			<div class="scroll" data-rate="0.5" id="art1" onclick="location.href='puttingthecultureinculturalmaterials.html'"> 
 				<div>Putting the 'Culture' in Cultural Materials</div>	
 			</div>	
@@ -48,11 +54,19 @@
 			<div class="scroll" data-rate="0.02" id="art4" onclick="location.href='haring.html'">
 				<div>Keith Haring Mural Analysis</div>
 			</div>
+
+			<div class='scroll' data-rate='0.15' id='art5' onclick="location.href='thesisreport.html'">
+				<div>Thesis Report</div>
+			</div>
+
+
 		</content>
 		<content id="colorBlocks">
+			<!-- These are just the colour blocks that scroll in the background
+				you will need to add the size info on the css-->
 			<div class="scroll" data-rate="2" id="col1"></div>
-			<div class="scroll" data-rate=".5" id="col2"></div>
-			<div class="scroll" data-rate="-.9" id="col3"></div>
+			<div class="scroll" data-rate="0.6" id="col2"></div>
+			<div class="scroll" data-rate="-0.9" id="col3"></div>
 			<div class="scroll" data-rate="2" id="col4"></div>
 			<div class="scroll" data-rate="1.5" id="col5"></div>
 			<div class="scroll" data-rate="1.8" id="col6"></div>
@@ -74,10 +88,13 @@
 			<div onclick="location.href='haring.html'">
 			Keith Haring Mural Analysis</div>
 
+			<div onclick="location.href='thesisreport.html'">Thesis Report</div>
+
+
 		</div>
 
 	<script>
-
+		/* the paralax effect is controlled here */
 		window.addEventListener('scroll', function(e) {
 
 			const target = document.querySelectorAll('.scroll');
@@ -94,5 +111,5 @@
 
 	</script>
 
-
 	</body>
+</html>
